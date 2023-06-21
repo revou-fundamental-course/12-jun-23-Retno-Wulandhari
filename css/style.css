@@ -1,0 +1,64 @@
+body{
+	font-family: Arial, Helvetica, sans-seri;
+	background-color:azure;
+}
+.TabelSuhu{
+	width: 450px;
+	/*background-image: url('ig.JPG');
+	background: #f6cac9;*/
+	background: #91a7d0;
+	/*meletakkan form ke tengah*/
+	margin: 80px auto;
+	padding: 30px 20px;
+	border-radius: 8px;
+
+}
+
+h1, p{
+	text-align: center;
+	color:white;
+	border:1px;
+}
+
+h3{
+	text-align: center;
+	color:black;
+	border:1px;
+	padding:10px;
+	background-color:cadetblue;
+	
+}
+
+label{
+	grid-column: 1/2;
+	margin-top: 4px;
+	margin-bottom: 4px;
+	font-size: 16px;
+	font-weight: inherit;
+	color:black;
+	
+}
+
+#inputFahrenheit, #inputCelcius{
+	grid-column: 2/3;
+	outline: none;
+	font-size: 16px;
+	border-radius: 8px;
+	border:none;
+	padding: 6px;
+}
+
+.output{
+	font-size: 16px;
+	color:white;
+
+}
+
+.InputSection{
+	display: flex;
+	flex-direction: column;
+}
+
+td{
+	border:10px;
+}

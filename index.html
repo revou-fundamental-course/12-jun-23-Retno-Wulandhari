@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/style.css">
+		<title>Konversi Suhu</title>
+</head>
+<body>
+	<div class="TabelSuhu">
+		<h1>Konverter Suhu</h1>
+		<p>Masukkan suhu celcius dan Fahrenheit ke kotak di bawah, hasil konversi dan cara kalkulasinya akan otomatis ditampilkan</p>
+
+		<h3>Konversi Fahrenheit ke Celcius</h3>
+			<label><b>Fahrenheit</b></label>
+			<input id="inputFahrenheit" type="number" placeholder="" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+	    <p></p>
+	    <div class="output"><b>Cara Kalkulasi :</b> (<span id="numFahrenheit"></span>&deg;F -32) / (9/5) </div>
+	    <div class="output" style="padding-top: 8px;"><b>Hasil :</b> <span id="outputCelcius"></span>&deg;C</div>
+		<br>
+
+		<h3>Konversi Celcius ke Fahrenheit</h3>
+			<label><b>Celcius</b></label>
+			<input id="inputCelcius" type="number" placeholder="" oninput="temperatureConverter2(this.value)" onchange="temperatureConverter(this.value)">
+		<p></p>
+   		<div class="output"><b>Cara Kalkulasi :</b> <span id="numCelcius"></span>&deg;C * (9/5) + 32 </div>
+   		<div class="output" style="padding-top: 8px;"><b>Hasil :</b> <span id="outputFahrenheit"></span>&deg;F</div>
+	</div>
+	<br>
+	<script src="js/script.js"> </script>
+
+</body>
+
+</html>
+
